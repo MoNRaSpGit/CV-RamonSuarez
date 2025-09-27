@@ -1,18 +1,40 @@
-.doc-card {
+/* ==== DOCUMENTACIÓN ==== */
+#documentacion {
   background: #1e1e1e;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  border-radius: 12px;
   color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
 }
 
-.doc-card:hover {
-  transform: translateY(-5px);
-  background: #2c2c2c;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+#documentacion h4 {
+  color: #9bbcff;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.doc-thumb {
-  max-height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
+/* Contenedor de imágenes */
+#documentacion .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Imagen individual */
+.doc-img {
+  width: 100%;
+  max-width: 220px;  /* 🔹 limita ancho */
+  height: auto;      /* 🔹 respeta proporción */
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;  /* 🔹 fondo blanco para bordes transparentes */
+  padding: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover */
+.doc-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.6);
 }
