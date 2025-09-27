@@ -3,7 +3,7 @@ import "../styles/documentacion.css";
 
 function Documentacion() {
   const docs = [
-    { name: "Título", file: "titulo.jpeg" },
+    { name: "Diploma", file: "titulo.jpeg" },
     { name: "Cédula (frente)", file: "cedula1.jpeg" },
     { name: "Cédula (dorso)", file: "cedula2.jpeg" },
     { name: "Licencia (frente)", file: "libreta1.jpeg" },
