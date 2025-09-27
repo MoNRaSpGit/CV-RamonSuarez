@@ -3,6 +3,7 @@
   border-radius: 10px;
   transition: all 0.3s ease;
   color: #f1f1f1;
+  cursor: pointer;
 }
 
 .doc-card:hover {
@@ -12,8 +13,48 @@
 }
 
 .doc-thumb {
-  max-height: 150px;
+  max-height: 200px; /* más grandes */
   object-fit: cover;
   border-radius: 6px;
   width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.doc-thumb:hover {
+  transform: scale(1.05);
+}
+
+/* Para imágenes horizontales */
+.doc-thumb.landscape {
+  object-fit: contain; /* que no se corte */
+  max-height: 150px;
+  background: #000; /* relleno */
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+  cursor: zoom-out;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+}
+
+.modal-img {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.8);
 }
