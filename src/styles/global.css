@@ -1,0 +1,45 @@
+/* ==== FONDO GENERAL ==== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #121212, #1f1f1f);
+  color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== DIVISOR ==== */
+.section-divider {
+  border: 0;
+  height: 1px;
+  margin: 18px 0;
+  background: linear-gradient(to right, transparent, #0d6efd66, transparent);
+}
+
+/* ==== ANIMACIONES DE ENTRADA ==== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ==== NAVBAR STICKY ==== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* para que quede por encima del contenido */
+  background: #1e1e1e; /* mismo estilo oscuro */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+

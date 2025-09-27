@@ -1,0 +1,18 @@
+.doc-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  color: #f1f1f1;
+}
+
+.doc-card:hover {
+  transform: translateY(-5px);
+  background: #2c2c2c;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.doc-thumb {
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+}
