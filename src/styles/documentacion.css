@@ -13,7 +13,7 @@
 }
 
 .doc-thumb {
-  max-height: 200px; /* más grandes */
+  max-height: 200px;
   object-fit: cover;
   border-radius: 6px;
   width: 100%;
@@ -24,11 +24,11 @@
   transform: scale(1.05);
 }
 
-/* Para imágenes horizontales */
+/* Horizontal */
 .doc-thumb.landscape {
-  object-fit: contain; /* que no se corte */
+  object-fit: contain;
   max-height: 150px;
-  background: #000; /* relleno */
+  background: #000;
 }
 
 /* Modal */
@@ -43,18 +43,37 @@
   align-items: center;
   justify-content: center;
   z-index: 1050;
-  cursor: zoom-out;
 }
 
 .modal-content {
-  max-width: 90%;
-  max-height: 90%;
+  position: relative;
+  max-width: 70%;  /* más chico */
+  max-height: 70%; /* más chico */
   text-align: center;
 }
 
 .modal-img {
   max-width: 100%;
-  max-height: 80vh;
+  max-height: 60vh; /* no tan gigante */
   border-radius: 8px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.8);
+}
+
+.modal-close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #dc3545;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.modal-close:hover {
+  background: #bb2d3b;
 }

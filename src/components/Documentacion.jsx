@@ -33,10 +33,16 @@ function Documentacion() {
         ))}
       </div>
 
-      {/* Modal para ampliar */}
+      {/* Modal */}
       {selectedDoc && (
         <div className="modal-overlay" onClick={() => setSelectedDoc(null)}>
-          <div className="modal-content">
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="modal-close"
+              onClick={() => setSelectedDoc(null)}
+            >
+              ❌
+            </button>
             <img
               src={`${import.meta.env.BASE_URL}${selectedDoc.file}`}
               alt={selectedDoc.name}

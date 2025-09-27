@@ -36,8 +36,7 @@ function App() {
       case "educacion": // 👈 agregamos educación  
       return <Educacion />;    
       case "documentacion":   // 👈 nuevo
-        return <Documentacion />
-        
+        return <Documentacion />        
       default:
         return <Profile />;
     }
