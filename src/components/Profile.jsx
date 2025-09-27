@@ -7,7 +7,7 @@ function Profile() {
   useEffect(() => {
     const interval = setInterval(() => {
       setFlipping((prev) => !prev);
-    }, 5000); // cada 5 seg gira
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -17,13 +17,13 @@ function Profile() {
         <div className="flip-inner">
           {/* Cara frontal */}
           <img
-            src="/fotoFormal.PNG"
+            src={`${import.meta.env.BASE_URL}fotoFormal.PNG`}
             alt="Foto formal"
             className="profile-img formal"
           />
           {/* Cara trasera */}
           <img
-            src="/fotoCasual.jpeg"
+            src={`${import.meta.env.BASE_URL}fotoCasual.jpeg`}
             alt="Foto casual"
             className="profile-img casual"
           />
