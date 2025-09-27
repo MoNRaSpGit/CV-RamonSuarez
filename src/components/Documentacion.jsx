@@ -2,59 +2,32 @@ import React from "react";
 import "../styles/documentacion.css";
 
 function Documentacion() {
+  const docs = [
+    { name: "Título", file: "titulo.jpeg" },
+    { name: "Cédula (frente)", file: "cedula1.jpeg" },
+    { name: "Cédula (dorso)", file: "cedula2.jpeg" },
+    { name: "Licencia (frente)", file: "libreta1.jpeg" },
+    { name: "Licencia (dorso)", file: "libreta2.jpeg" },
+    { name: "Marfrig", file: "marfrig.jpeg" },
+    { name: "ORT", file: "ort.jpeg" },
+  ];
+
   return (
     <div className="card-dark p-4 shadow-sm mb-4 fade-in" id="documentacion">
-      <h4 className="fw-bold mb-4">📄 Documentación</h4>
+      <h4 className="fw-bold mb-4">📑 Documentación</h4>
       <div className="row g-3">
-        <div className="col-6 col-md-4">
-          <img
-            src={`${import.meta.env.BASE_URL}titulo.jpeg`}
-            alt="Título"
-            className="doc-img"
-          />
-        </div>
-        <div className="col-6 col-md-4">
-          <img
-            src={`${import.meta.env.BASE_URL}cedula1.jpeg`}
-            alt="Cédula frente"
-            className="doc-img"
-          />
-        </div>
-        <div className="col-6 col-md-4">
-          <img
-            src={`${import.meta.env.BASE_URL}cedula2.jpeg`}
-            alt="Cédula dorso"
-            className="doc-img"
-          />
-        </div>
-        <div className="col-6 col-md-4">
-          <img
-            src={`${import.meta.env.BASE_URL}licencia1.jpeg`}
-            alt="Licencia frente"
-            className="doc-img"
-          />
-        </div>
-        <div className="col-6 col-md-4">
-          <img
-            src={`${import.meta.env.BASE_URL}licencia2.jpeg`}
-            alt="Licencia dorso"
-            className="doc-img"
-          />
-        </div>
-        <div className="col-6 col-md-4">
-          <img
-            src={`${import.meta.env.BASE_URL}marfrig.jpeg`}
-            alt="Marfrig"
-            className="doc-img"
-          />
-        </div>
-        <div className="col-6 col-md-4">
-          <img
-            src={`${import.meta.env.BASE_URL}ort.jpeg`}
-            alt="ORT"
-            className="doc-img"
-          />
-        </div>
+        {docs.map((doc, i) => (
+          <div key={i} className="col-12 col-md-6 col-lg-4">
+            <div className="doc-card p-3 text-center">
+              <img
+                src={`${import.meta.env.BASE_URL}${doc.file}`}
+                alt={doc.name}
+                className="doc-thumb mb-2"
+              />
+              <p className="mb-0">{doc.name}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
