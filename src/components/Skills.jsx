@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Profile from "./Profile"; // 👈 importamos el perfil
 import "../styles/habilidades.css";
 
 function Skills() {
@@ -20,27 +19,7 @@ function Skills() {
 
   return (
     <>
-      {/* 👤 Perfil arriba */}
-      <Profile />
-
-      {/* Tarjeta informativa */}
-      <div className="info-card mb-4 fade-in">
-        <div className="info-icon">💡</div>
-        <h5 className="info-title">Mi camino en la programación</h5>
-        <p className="info-text">
-          Inicié en el mundo de la programación en 2016 a través de cursos
-          online y aprendizaje autodidacta. Con el tiempo adquirí experiencia en
-          HTML, CSS y JavaScript, y me adentré en frameworks como React y
-          Node.js.
-        </p>
-        <p className="info-text">
-          Lo que más me apasiona es la posibilidad de crear soluciones útiles y{" "}
-          <strong>automatizar procesos que faciliten el trabajo</strong>,
-          evitando tareas repetitivas y mejorando la eficiencia.
-        </p>
-      </div>
-
-      {/* Tarjeta de habilidades */}
+      {/* 💻 Habilidades arriba */}
       <div className="card-dark p-4 shadow-sm mb-4 fade-in" id="programacion">
         <h4 className="fw-bold mb-4">💻 Habilidades en Programación</h4>
         <div className="row g-3">
@@ -67,6 +46,23 @@ function Skills() {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* 💡 Texto "Mi camino en la programación" debajo */}
+      <div className="info-card mb-4 fade-in">
+        <div className="info-icon">💡</div>
+        <h5 className="info-title">Mi camino en la programación</h5>
+        <p className="info-text">
+          Inicié en el mundo de la programación en 2016 a través de cursos
+          online y aprendizaje autodidacta. Con el tiempo adquirí experiencia en
+          HTML, CSS y JavaScript, y me adentré en frameworks como React y
+          Node.js.
+        </p>
+        <p className="info-text">
+          Lo que más me apasiona es la posibilidad de crear soluciones útiles y{" "}
+          <strong>automatizar procesos que faciliten el trabajo</strong>,
+          evitando tareas repetitivas y mejorando la eficiencia.
+        </p>
       </div>
     </>
   );
