@@ -1,16 +1,14 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Soporte from "./components/Soporte";
 import Atencion from "./components/Atencion";
-import Hobbies from "./components/Hobbies"; // 👈 importamos Hobbies
+import Hobbies from "./components/Hobbies";
 import Experiencia from "./components/Experiencia";
-import Educacion from "./components/Educacion"; // 👈 nuevo
-import Documentacion from "./components/Documentacion"; // 👈 importamos documentación
-
+import Educacion from "./components/Educacion";
+import Documentacion from "./components/Documentacion";
 
 function App() {
   const [activeSection, setActiveSection] = useState("perfil");
@@ -31,12 +29,12 @@ function App() {
         return <Soporte />;
       case "atencion":
         return <Atencion />;
-      case "experiencia":   // 👈 nuevo
+      case "experiencia":
         return <Experiencia />;
-      case "educacion": // 👈 agregamos educación  
-      return <Educacion />;    
-      case "documentacion":   // 👈 nuevo
-        return <Documentacion />        
+      case "educacion":
+        return <Educacion />;
+      case "documentacion":
+        return <Documentacion />;
       default:
         return <Profile />;
     }
@@ -46,19 +44,9 @@ function App() {
     <div className="container-fluid">
       <Navbar setActiveSection={setActiveSection} />
 
-
-      <div className="row mt-4">
-        {/* Sidebar a la izquierda */}
-        <div className="col-md-4">
-          <Sidebar
-            activeSection={activeSection}
-            setActiveSection={setActiveSection}
-          />
-
-        </div>
-
-        {/* Contenido dinámico a la derecha */}
-        <div className="col-md-8">{renderSection()}</div>
+      {/* 🔹 Eliminamos Sidebar, centramos el contenido */}
+      <div className="row mt-4 justify-content-center">
+        <div className="col-12 col-md-10 col-lg-8">{renderSection()}</div>
       </div>
     </div>
   );

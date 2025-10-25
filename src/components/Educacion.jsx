@@ -1,11 +1,10 @@
 import React from "react";
-import Profile from "./Profile"; // 👈 mantenemos el perfil arriba
+
 
 function Educacion() {
   return (
     <>
-      {/* Perfil siempre arriba */}
-      <Profile />
+      
 
       {/* Sección Educación */}
       <div className="card-dark p-4 shadow-sm mb-4 fade-in" id="educacion">

@@ -1,0 +1,22 @@
+.navbar .dropdown-toggle.text-info {
+  color: #9bbcff !important;
+  font-weight: 600;
+}
+
+.navbar .dropdown-toggle.text-info:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 6px rgba(13, 110, 253, 0.7);
+}
+
+.modal-content {
+  background: #1e1e1e;
+  color: #f1f1f1;
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+}
+
+.modal-header,
+.modal-footer {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
