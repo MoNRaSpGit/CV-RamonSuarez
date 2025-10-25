@@ -12,7 +12,7 @@ function Educacion() {
 
         {/* Bachillerato */}
         <div className="info-card mb-3">
-          <h6 className="info-title">2009 - 2013 · Bachillerato Diversificado</h6>
+          <h6 className="info-title">2009 - 2013 · Bachillerato </h6>
           <p className="info-text">
             Culminé el <strong>Bachillerato completo</strong> en 2013, dentro de
             la orientación común. Esta etapa me permitió adquirir una base
