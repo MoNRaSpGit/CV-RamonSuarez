@@ -30,7 +30,7 @@ body {
   grid-template-columns: 300px 1fr;
   gap: 3rem;
   align-items: start;
-  outline: 3px solid cyan;
+ /* outline: 3px solid cyan;*/
 }
 
 /* === MAIN === */
@@ -38,7 +38,7 @@ body {
   display: grid;
   gap: 4rem;
   margin-top: 3rem;
-  outline: 3px dashed limegreen;
+ /* outline: 3px dashed limegreen;*/
   margin-right: 250px;
 }
 
