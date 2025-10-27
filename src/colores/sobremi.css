@@ -18,19 +18,29 @@
   color: var(--brand);
   font-weight: 600;
 }
-
-/* Línea de tiempo */
+/* === AJUSTE DE ALINEACIÓN PARA LÍNEA DE TIEMPO === */
 .timeline {
   margin-top: 1.5rem;
   padding-left: 1rem;
   border-left: 2px solid var(--brand);
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 👈 fuerza alineación izquierda */
   gap: 0.75rem;
   color: var(--fg);
+}
+
+.timeline div {
+  text-align: left;          /* 👈 asegura que el texto no se centre */
+  width: 100%;               /* 👈 evita que el primero flote */
+  word-break: break-word;    /* 👈 evita que largos nombres lo empujen */
+  display: flex;
+  align-items: center;
 }
 
 .timeline div::before {
   content: "•";
   color: var(--brand);
   margin-right: 0.5rem;
+  flex-shrink: 0; /* 👈 evita que el punto se mueva */
 }

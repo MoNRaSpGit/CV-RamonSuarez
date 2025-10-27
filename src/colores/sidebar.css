@@ -11,6 +11,7 @@
   z-index: 10;
   transform: translateX(-250px);
   transition: top 0.2s ease, transform 0.2s ease;
+   outline: 3px dashed limegreen;
  
 }
 
