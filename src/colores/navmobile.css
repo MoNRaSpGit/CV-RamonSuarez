@@ -88,8 +88,17 @@
 }
 
 /* === SOLO SE MUESTRA EN CELULARES === */
+/* === SOLO SE MUESTRA EN CELULARES === */
 @media (max-width: 900px) {
   .nav-mobile {
     display: flex;
+    position: sticky; /* 👈 para que quede fija arriba */
+    top: 0;
+  }
+
+  /* Ocultamos el sidebar */
+  .cv-aside {
+    display: none !important;
   }
 }
+
