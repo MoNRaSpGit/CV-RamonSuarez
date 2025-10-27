@@ -11,6 +11,7 @@
   z-index: 10;
   transform: translateX(-250px);
   transition: top 0.2s ease, transform 0.2s ease;
+ 
 }
 
 /* === NOMBRE Y ROL === */
@@ -93,6 +94,7 @@
     padding: 1rem 0;
     text-align: center;
     align-items: center;
+    outline: 2px dotted orange;
   }
 
   .cv-name {

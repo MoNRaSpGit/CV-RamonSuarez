@@ -30,6 +30,7 @@ body {
   grid-template-columns: 300px 1fr;
   gap: 3rem;
   align-items: start;
+  outline: 3px solid cyan;
 }
 
 /* === MAIN === */
@@ -37,6 +38,8 @@ body {
   display: grid;
   gap: 4rem;
   margin-top: 3rem;
+  outline: 3px dashed limegreen;
+  margin-right: 250px;
 }
 
 .cv-main .sec:first-of-type {
@@ -79,6 +82,11 @@ body {
 
   .cv-main {
     margin-top: 1rem !important;
+     margin-right: 0;           /* ❌ quita desplazamiento */
+    margin-left: 0;            /* asegura simetría */
+    width: 100%;               /* ocupa todo el ancho disponible */
+    justify-items: center;     /* centra internamente el contenido grid */
+    padding: 0 1rem;     
   }
 
   .cv-main .sec:first-of-type {
@@ -108,6 +116,9 @@ body {
     margin: 0 auto;
     align-items: center;
     text-align: center;
+    outline: 2px dotted orange;
+    
+    
   }
 
   .sec {
