@@ -1,0 +1,36 @@
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.hab-grid h3 {
+  color: var(--brand);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hab-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hab-grid li {
+  color: var(--fg-dim);
+  margin: 0.3rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.hab-grid li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--brand);
+}

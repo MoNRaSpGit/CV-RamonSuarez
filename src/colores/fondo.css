@@ -1,0 +1,47 @@
+/* 🎨 Fondo global con degradado y ambientación */
+.fondo-general {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(900px 600px at 20% 20%, rgba(10, 25, 47, 0.8), transparent 70%),
+    radial-gradient(800px 500px at 90% 80%, rgba(27, 45, 60, 0.6), transparent 70%),
+    linear-gradient(135deg, #0a192f, #0b1e2d);
+  background-attachment: fixed;
+
+  /* 🎬 micro-postprocesado */
+  filter: saturate(1.05) brightness(0.98) blur(0.6px);
+  will-change: background;
+  transition: filter 0.2s ease, background 0.2s ease;
+}
+
+/* 🌫️ Capa de ambiente: vignette + halo suave */
+.fondo-general::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 900px at 50% 55%, rgba(255, 255, 255, 0.03), transparent 70%),
+    radial-gradient(130% 100% at 50% 120%, rgba(0, 0, 0, 0.35), transparent 60%),
+    radial-gradient(110% 90% at -10% -10%, rgba(0, 0, 0, 0.25), transparent 60%),
+    radial-gradient(110% 90% at 110% -10%, rgba(0, 0, 0, 0.25), transparent 60%);
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+
+/* 💡 Linterna realista (amplia y sutil) */
+.fondo-general::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    600px 600px at var(--mx) var(--my),
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0) 70%
+  );
+  mix-blend-mode: screen;
+  transition: background 0.1s linear;
+  z-index: 2;
+}

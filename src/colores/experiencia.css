@@ -1,0 +1,73 @@
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.exp-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.exp-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.exp-item:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .25rem;
+}
+
+.exp-header h3 {
+  color: var(--fg);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.exp-periodo {
+  color: var(--fg-dim);
+  font-size: 0.9rem;
+}
+
+.exp-empresa {
+  color: var(--brand);
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.exp-descripcion {
+  color: var(--fg-dim);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.exp-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exp-tecnologias li {
+  background: rgba(100, 255, 218, 0.08);
+  border: 1px solid rgba(100, 255, 218, 0.25);
+  color: var(--brand);
+  font-size: 0.85rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}

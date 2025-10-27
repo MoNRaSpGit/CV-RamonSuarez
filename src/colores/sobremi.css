@@ -1,0 +1,25 @@
+.sobremi p {
+  color: var(--fg-dim);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.timeline {
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--brand);
+  display: grid;
+  gap: .75rem;
+  color: var(--fg);
+}
+.timeline div::before {
+  content: "•";
+  color: var(--brand);
+  margin-right: .5rem;
+}
+
+/* 🔹 Asegura que los <strong> dentro de párrafos se vean resaltados */
+.sobremi p strong {
+  color: var(--brand);
+  font-weight: 600;
+}
