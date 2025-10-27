@@ -124,3 +124,15 @@
     gap: 1.5rem;
   }
 }
+
+/* === OCULTAR SIDEBAR Y AJUSTAR ESPACIADO EN MÓVILES === */
+@media (max-width: 900px) {
+  .cv-aside {
+    display: none !important;
+  }
+
+  .cv-main {
+    margin-top: 5rem !important; /* deja espacio para el navbar móvil */
+  }
+}
+
