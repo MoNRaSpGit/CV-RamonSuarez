@@ -1,0 +1,95 @@
+/* === NAVBAR MÓVIL === */
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(10, 25, 47, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 999;
+  display: none; /* 👈 se activa solo en móvil */
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+/* Encabezado con logo + hamburguesa */
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+}
+
+.nav-logo {
+  color: var(--brand);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-burger {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--fg);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-burger:hover {
+  color: var(--brand);
+}
+
+/* Links principales visibles */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-links a {
+  color: var(--fg-dim);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s;
+}
+
+.nav-links a:hover {
+  color: var(--brand);
+}
+
+/* Menú desplegable (hamburguesa) */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  background: rgba(10, 25, 47, 0.98);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  animation: slideDown 0.3s ease forwards;
+}
+
+.nav-menu a {
+  padding: 1rem;
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.25s;
+}
+
+.nav-menu a:hover {
+  background: rgba(100, 255, 218, 0.08);
+}
+
+/* Animación */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === SOLO SE MUESTRA EN CELULARES === */
+@media (max-width: 900px) {
+  .nav-mobile {
+    display: flex;
+  }
+}

@@ -8,6 +8,7 @@ import { Mail, Instagram, Phone } from "lucide-react";
 import "../colores/layoutCV.css";
 import "../colores/sidebar.css";
 import "../colores/videoModal.css";
+import NavMobile from "./NavMobile";
 
 
 export default function LayoutCV() {
