@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../colores/layoutCV.css";
+import "../colores/proyectos.css";
+
 
 export default function Proyectos() {
   const [videoSrc, setVideoSrc] = useState(null);

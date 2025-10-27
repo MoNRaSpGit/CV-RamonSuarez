@@ -6,6 +6,9 @@ import Proyectos from "./Proyectos";
 import Contacto from "./Contacto";
 import { Mail, Instagram, Phone } from "lucide-react";
 import "../colores/layoutCV.css";
+import "../colores/sidebar.css";
+import "../colores/videoModal.css";
+
 
 export default function LayoutCV() {
   const [active, setActive] = useState("#sobre-mi");

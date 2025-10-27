@@ -1,15 +1,18 @@
+/* === SECCIÓN EXPERIENCIA === */
 .experiencia {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+/* Contenedor principal de los ítems */
 .exp-lista {
   display: flex;
   flex-direction: column;
   gap: 1.8rem;
 }
 
+/* Tarjeta individual de experiencia */
 .exp-item {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -23,11 +26,12 @@
   border-color: var(--brand);
 }
 
+/* Cabecera (cargo + fecha) */
 .exp-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .exp-header h3 {
@@ -41,12 +45,14 @@
   font-size: 0.9rem;
 }
 
+/* Empresa */
 .exp-empresa {
   color: var(--brand);
   font-size: 1rem;
   margin-bottom: 0.6rem;
 }
 
+/* Descripción */
 .exp-descripcion {
   color: var(--fg-dim);
   line-height: 1.6;
@@ -54,6 +60,7 @@
   margin-bottom: 0.8rem;
 }
 
+/* Tecnologías utilizadas */
 .exp-tecnologias {
   display: flex;
   flex-wrap: wrap;
@@ -70,4 +77,27 @@
   font-size: 0.85rem;
   padding: 0.3rem 0.6rem;
   border-radius: 6px;
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 900px) {
+  .exp-item {
+    padding: 1rem;
+  }
+
+  .exp-header h3 {
+    font-size: 1.05rem;
+  }
+
+  .exp-empresa {
+    font-size: 0.95rem;
+  }
+
+  .exp-descripcion {
+    font-size: 0.9rem;
+  }
+
+  .exp-tecnologias li {
+    font-size: 0.8rem;
+  }
 }
