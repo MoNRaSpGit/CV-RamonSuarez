@@ -66,7 +66,7 @@ body {
   justify-items: center;
   text-align: center;
   
-  outline: 2px solid limegreen;
+ /* outline: 2px solid limegreen;*/
   transform: translateX(-250px); /* mueve solo la caja verde (sidebar) */
   transition: top 0.2s ease, transform 0.2s ease;
    
@@ -242,32 +242,48 @@ body {
 @media (max-width: 900px) {
   .cv-wrap {
     grid-template-columns: 1fr;
-     align-items: start; /* 👈 Asegura que empiece todo arriba */
-  }
-  .cv-main .sec:first-of-type {
-    margin-top: 0 !important;
+    align-items: start;
+    width: 95%;
+    margin: 0 auto;
   }
 
-   .cv-aside {
-    position: relative !important; /* 👈 vuelve al flujo normal */
-    top: 0 !important; /* elimina el offset sticky */
-    margin-bottom: 0; /* quita cualquier salto entre aside y main */
+  /* Sidebar vuelve arriba, centrado */
+  .cv-aside {
+    position: relative !important;
+    top: 0 !important;
     transform: none;
+    margin-bottom: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
   }
 
-  /* 🔹 Links tipo botón */
+  /* 👇 tamaño de nombre y rol más pequeño */
+  .cv-name {
+    font-size: clamp(1.4rem, 1rem + 1vw, 2rem);
+    letter-spacing: 1px;
+  }
+
+  .cv-role {
+    font-size: 0.95rem;
+  }
+
+  /* Navegación tipo botones centrados */
   .cv-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.75rem;
+    gap: 0.7rem;
     width: 100%;
     padding: 0 1rem;
+    margin-top: 0.5rem;
   }
 
   .cv-nav a {
     display: inline-block;
-    padding: 0.7rem 1.2rem;
+    padding: 0.6rem 1.1rem;
     border-radius: 8px;
     border: 1px solid rgba(100, 255, 218, 0.3);
     background: rgba(100, 255, 218, 0.06);
@@ -275,6 +291,7 @@ body {
     font-weight: 600;
     text-decoration: none;
     transition: all 0.25s ease;
+    text-align: center;
   }
 
   .cv-nav a:hover {
@@ -288,11 +305,12 @@ body {
     background: rgba(100, 255, 218, 0.1);
   }
 
-  /* 🔹 Footer (íconos cerca y centrados) */
+  /* Footer centrado */
   .cv-footer {
-    margin-top: 0; /* 👈 eliminamos el empuje manual */
+    margin-top: 1.5rem;
     padding-bottom: 0.5rem;
     gap: 1.5rem;
+    justify-content: center;
   }
 
   .cv-footer a {
@@ -305,8 +323,8 @@ body {
     transform: translateY(-3px);
   }
 
-    .cv-main {
-    margin-top: 0 !important; /* 👈 elimina cualquier respiro adicional */
+  .cv-main {
+    margin-top: 1rem !important;
   }
 }
 
