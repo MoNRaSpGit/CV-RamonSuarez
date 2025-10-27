@@ -18,29 +18,31 @@
   color: var(--brand);
   font-weight: 600;
 }
-/* === AJUSTE DE ALINEACIÓN PARA LÍNEA DE TIEMPO === */
+
+
+/* === LÍNEA DE TIEMPO - FIJA Y ALINEADA === */
 .timeline {
   margin-top: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 1.2rem;
   border-left: 2px solid var(--brand);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* 👈 fuerza alineación izquierda */
-  gap: 0.75rem;
+  display: grid;
+  gap: 0.8rem;
   color: var(--fg);
 }
 
 .timeline div {
-  text-align: left;          /* 👈 asegura que el texto no se centre */
-  width: 100%;               /* 👈 evita que el primero flote */
-  word-break: break-word;    /* 👈 evita que largos nombres lo empujen */
-  display: flex;
-  align-items: center;
+  position: relative;
+  padding-left: 1rem;           /* separa el texto del punto */
+  text-align: left;             /* fuerza alineación izquierda */
+  line-height: 1.5;
 }
 
 .timeline div::before {
   content: "•";
+  position: absolute;
+  left: 0;                      /* el punto va al borde exacto */
+  top: 0.1rem;
   color: var(--brand);
-  margin-right: 0.5rem;
-  flex-shrink: 0; /* 👈 evita que el punto se mueva */
+  font-size: 1.2rem;
+  line-height: 1;
 }

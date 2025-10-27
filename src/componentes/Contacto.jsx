@@ -7,7 +7,7 @@ export default function Contacto() {
     <section id="contacto" className="sec contacto">
       <h2 className="t2">Contacto</h2>
       <p className="contacto-texto">
-        Si querés comunicarte conmigo para consultas, colaboraciones o proyectos,
+        Si querés comunicarte conmigo, 
         podés hacerlo a través de los siguientes medios:
       </p>
 
@@ -43,7 +43,7 @@ export default function Contacto() {
         </a>
       </div>
 
-      <p className="contacto-final">💬 ¡Gracias por visitar mi portafolio!</p>
+      <p className="contacto-final">💬 ¡Saludos!</p>
     </section>
   );
 }
