@@ -7,7 +7,7 @@ export default function Proyectos() {
       nombre: "Tienda Web",
       descripcion:
         "Sistema de gestión de ventas desarrollado para un almacén local. Permite visualizar productos, realizar pedidos, gestionar stock y administrar ventas en tiempo real.",
-      sitio: "https://monraspgit.github.io/WebAlamcenFront/",
+      sitio: "https://monraspgit.github.io/E-commerce/#/login",
     },
     {
       nombre: "Sitio web jurídico",
