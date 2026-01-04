@@ -4,9 +4,9 @@ import "../colores/proyectos.css";
 export default function Proyectos() {
   const proyectos = [
     {
-      nombre: "Tienda Web",
+      nombre: "E-commers",
       descripcion:
-        "Sistema de gestión de ventas desarrollado para un almacén local. Permite visualizar productos, realizar pedidos, gestionar stock y administrar ventas en tiempo real.",
+        "Tienda web la cual simula el proceso completo de compra y gestión de pedidos, diferenciando roles de usuario, operario y administrador, con flujos y permisos específicos para cada uno. ",
       sitio: "https://monraspgit.github.io/E-commerce/#/login",
     },
     {

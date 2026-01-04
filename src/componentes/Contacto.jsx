@@ -1,13 +1,14 @@
 // src/componentes/Contacto.jsx
 import "../colores/contacto.css";
-import { Mail, Phone, Instagram } from "lucide-react";
+import { Mail, Phone, Linkedin } from "lucide-react";
 
 export default function Contacto() {
   return (
     <section id="contacto" className="sec contacto">
       <h2 className="t2">Contacto</h2>
+
       <p className="contacto-texto">
-        Si querés comunicarte conmigo, 
+        Si querés comunicarte conmigo,
         podés hacerlo a través de los siguientes medios:
       </p>
 
@@ -33,13 +34,13 @@ export default function Contacto() {
         </a>
 
         <a
-          href="https://www.instagram.com/monra_suarez"
+          href="https://www.linkedin.com/in/ram%C3%B3n-suarez-833b83188/"
           className="contacto-link"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Instagram size={20} />
-          <span>@monra_suarez</span>
+          <Linkedin size={20} />
+          <span>LinkedIn / Ramón Suárez</span>
         </a>
       </div>
 
